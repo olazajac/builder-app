@@ -1,5 +1,5 @@
 "use client";
-import { ComponentProps } from "react";
+
 import { BuilderComponent, useIsPreviewing } from "@builder.io/react";
 import { BuilderContent, builder } from "@builder.io/sdk";
 import DefaultErrorPage from "next/error";
