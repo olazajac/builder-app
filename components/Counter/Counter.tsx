@@ -1,6 +1,4 @@
 "use client";
-import React, { useState } from "react";
-import styles from "./styles.module.css";
 
 interface CounterProps {
   height?: string;
@@ -10,7 +8,7 @@ interface CounterProps {
   objectPosition?: string;
 }
 
-function Counter({
+function Counter( {
   poster = "",
   videoLink = "https://d2y941kkirbmq4.cloudfront.net/media/ldvideos/motherdancing.mp4",
   width = "100%",
