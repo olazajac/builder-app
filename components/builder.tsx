@@ -1,11 +1,15 @@
 "use client";
 import { ComponentProps } from "react";
 import { BuilderComponent, useIsPreviewing } from "@builder.io/react";
-// import { BuilderContent, builder } from "@builder.io/sdk";
+import { BuilderContent, builder } from "@builder.io/sdk";
 import DefaultErrorPage from "next/error";
 import "../builder-registry";
 
-type BuilderPageProps = ComponentProps<typeof BuilderComponent>;
+// type BuilderPageProps = ComponentProps<typeof BuilderComponent>;
+type BuilderPageProps = {
+  content?: BuilderContent;
+  model: string;
+};
 
 // Builder Public API Key set in .env file
 builder.init(process.env.NEXT_PUBLIC_BUILDER_API_KEY!);
